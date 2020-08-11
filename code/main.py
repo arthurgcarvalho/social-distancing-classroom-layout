@@ -56,7 +56,7 @@ from fixed_seats_model_with_radius import fixed_seats_model_with_radius
 ############### Example run ######################
 
 ## change to your path to input file. This example excel file can be found in examples directory
-file = "input/example_all_coordinates.xlsx"  # input file name, required parameter
+file = "examples/example_all_coordinates.xlsx"  # input file name, required parameter
 
 ## other parameters:
 social_distance = 6 * 12  # inches, required parameter
@@ -71,13 +71,13 @@ fixed_seats_model(file, d0=social_distance, d2=door_distance, d3=aisle_distance,
                   output_filename_affix=output_filename_affix)
 
 ## change to your path to output file. This example excel file can be found in examples directory
-result_file = "input/example_all_coordinates_6ft_prevention.xlsx"  # file to be plotted
+result_file = "examples/example_all_coordinates_6ft_prevention.xlsx"  # file to be plotted
 
 ## this line will creat a pdf file of classroom layout plot
 plot_layout_result(result_file, firstrow_y=firstrowy)
 
 ## change to your path to input file. This example excel file can be found in examples directory
-file = "input/example_all_coordinates.xlsx"
+file = "examples/example_all_coordinates.xlsx"
 
 ## this line will create an output file: example_all_coordinates_6ft_radius.xlsx
 fixed_seats_model_with_radius(file, seat_radius=12, d0=6 * 12, output_filename_affix='6ft_radius')
